@@ -1,15 +1,43 @@
 {
+  "name": "jobpilot",
+  "version": "0.0.1",
+  "homepage": "https://templatecookie.com",
   "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint:js": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint:prettier": "prettier --check .",
+    "lint": "yarn lint:js && yarn lint:prettier",
+    "lintfix": "prettier --write --list-different . && yarn lint:js --fix",
+    "ionic:build": "npm run build",
+    "ionic:serve": "npm run dev"
   },
   "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/eslint-module": "^4.0.2",
+    "@nuxtjs/ionic": "^0.8.1",
+    "@nuxtjs/tailwindcss": "^6.6.4",
+    "@typescript-eslint/parser": "^5.56.0",
     "eslint": "^8.36.0",
-    "nuxt": "^3.3.1"
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nuxt": "^3.3.1",
+    "prettier": "^2.8.6",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "@capacitor/android": "4.7.1",
+    "@capacitor/app": "4.1.1",
+    "@capacitor/cli": "4.7.1",
+    "@capacitor/core": "4.7.1",
+    "@capacitor/haptics": "4.1.0",
+    "@capacitor/keyboard": "4.1.1",
+    "@capacitor/status-bar": "4.1.1",
+    "@phosphor-icons/vue": "^2.0.1",
+    "vue-eslint-parser": "^9.1.0"
   }
 }

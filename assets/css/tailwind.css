@@ -1,0 +1,393 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Inter-Light.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Inter-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/Inter-Semibold.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Inter-Bold.ttf");
+}
+
+/* Set variables for all modes */
+:root {
+  /* 
+  --ion-background-color-rgb
+  --ion-text-color-rgb
+  --ion-backdrop-color
+  --ion-backdrop-opacity
+  --ion-overlay-background-color
+  --ion-box-shadow-color: none;
+  --ion-tab-bar-background
+  --ion-tab-bar-background-focused
+  --ion-tab-bar-border-color
+  --ion-tab-bar-color
+  --ion-tab-bar-color-selected
+  
+  --ion-toolbar-color
+  --ion-toolbar-segment-color
+  --ion-toolbar-segment-color-checked
+  --ion-toolbar-segment-background
+  --ion-toolbar-segment-background-checked
+  --ion-toolbar-segment-indicator-color
+  --ion-item-border-color
+  --ion-item-color */
+
+  --ion-background-color: #f9fafb;
+  --ion-background-color: #f1f2f4;
+  --ion-font-family: "Inter", "system-ui";
+  --ion-border-color: #e4e5e8;
+  --ion-text-color: #18191c;
+  --ion-item-background: #ffffff;
+  --ion-placeholder-color: #767f8c;
+  --ion-toolbar-background: #fff;
+  --ion-toolbar-border-color: #e4e5e8;
+  --box-shadow: none;
+
+  --ion-color-primary: #0a65cc;
+  --ion-color-primary-rgb: 10, 101, 204;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #0959b4;
+  --ion-color-primary-tint: #2374d1;
+
+  --ion-color-secondary: #767f8c;
+  --ion-color-secondary-rgb: 118, 127, 140;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #68707b;
+  --ion-color-secondary-tint: #848c98;
+
+  --ion-color-tertiary: #5260ff;
+  --ion-color-tertiary-rgb: 82, 96, 255;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #4854e0;
+  --ion-color-tertiary-tint: #6370ff;
+
+  --ion-color-success: #0ba02c;
+  --ion-color-success-rgb: 11, 160, 44;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #0a8d27;
+  --ion-color-success-tint: #23aa41;
+
+  --ion-color-warning: #ffa500;
+  --ion-color-warning-rgb: 255, 165, 0;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #e09100;
+  --ion-color-warning-tint: #ffae1a;
+
+  --ion-color-danger: #e05151;
+  --ion-color-danger-rgb: 224, 81, 81;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #c54747;
+  --ion-color-danger-tint: #e36262;
+
+  --ion-color-medium: #767f8c;
+  --ion-color-medium-rgb: 118, 127, 140;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #68707b;
+  --ion-color-medium-tint: #848c98;
+
+  --ion-color-light: #e4e5e8;
+  --ion-color-light-rgb: 228, 229, 232;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #c9cacc;
+  --ion-color-light-tint: #e7e8ea;
+}
+
+*,
+ion-toolbar,
+ion-header {
+  --box-shadow: none;
+}
+
+ion-header {
+  position: unset;
+  border-bottom: 1px solid #e4e5e8 !important;
+}
+
+ion-button.logo {
+  --background: transparent;
+}
+
+ion-button {
+  margin: 0;
+  height: unset;
+  text-transform: unset;
+  letter-spacing: unset;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+ion-button.submit {
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+ion-list.app-menu ion-list-header {
+  min-height: unset;
+}
+ion-list.app-menu ion-item {
+  --min-height: auto;
+  --background: unset;
+}
+
+ion-list.app-menu ion-button {
+  width: 100%;
+  --padding-start: 0px;
+  --padding-end: 0px;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+}
+
+ion-item.checkbox {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  --min-height: unset;
+  --inner-border-width: 0;
+  --background: transparent;
+}
+
+ion-item.checkbox ion-checkbox {
+  --size: 20px;
+  --background-checked: var(--ion-color-primary);
+}
+
+ion-item.checkbox ion-checkbox::part(container) {
+  border: 2px solid var(--ion-color-primary);
+}
+
+ion-item.checkbox ion-checkbox {
+  margin: 0;
+}
+
+ion-item.checkbox ion-label {
+  --border-color: unset;
+  border: 0px;
+  margin: 0;
+  white-space: normal !important;
+}
+
+/* Custom CSS */
+
+.card-list ion-item ion-button {
+  width: 100%;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  --padding-start: 0px;
+  --padding-end: 0px;
+  --background: transparent;
+  height: auto;
+}
+
+.card-list ion-item {
+  --inner-padding-start: 0px;
+  --inner-padding-end: 0px;
+  --padding-start: 0px;
+  --padding-end: 0px;
+  --background: transparent;
+  --inner-border-width: 0px;
+  --border-width: 0px;
+}
+.card-list ion-item.range-item {
+  --border-style: none;
+}
+
+.pricing-list ion-item {
+  --min-height: unset;
+  --padding-start: 0;
+  --inner-padding-end: 0;
+}
+
+.custom-input {
+  --padding-start: 45px;
+  --padding-end: 12px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+}
+
+ion-button.anchor-button {
+  --padding-start: 0px !important;
+  --padding-end: 0px !important;
+  --padding-top: 0px !important;
+  --padding-bottom: 0px !important;
+  --background: transparent !important;
+  height: auto !important;
+  width: max-content !important;
+}
+
+ion-button.anchor-button.inner-button {
+  --color: #c8ccd1 !important;
+}
+
+.primary-button {
+  --background: var(--ion-color-primary) !important;
+  --border-radius: 3px;
+  --color: white;
+  --padding-top: 8px !important;
+  --padding-bottom: 8px !important;
+  --padding-start: 18px !important;
+  --padding-end: 18px !important;
+}
+
+.filter-button {
+  --background: #f1f2f4;
+  --border-radius: 3px;
+  --color: #18191c;
+  --padding-top: 8px;
+  --padding-bottom: 8px;
+}
+
+.primary-button svg,
+.filter-button svg {
+  margin-right: 8px;
+}
+.primary-button.w-full svg {
+  margin-right: 0px;
+  margin-left: 8px;
+}
+
+.inline-button {
+  --background: #ffffff !important;
+  width: max-content !important;
+  --border-radius: 3px;
+  --padding-top: 8px !important;
+  --padding-bottom: 8px !important;
+  --padding-start: 8px !important;
+  --padding-end: 8px !important;
+}
+.inline-button-bg {
+  --background: #e7f0fa !important;
+  --color: #0a65cc !important;
+  width: max-content !important;
+  --border-radius: 4px;
+  --padding-top: 8px !important;
+  --padding-bottom: 8px !important;
+  --padding-start: 8px !important;
+  --padding-end: 8px !important;
+}
+.inline-button.padding {
+  --padding-top: 0px !important;
+  --padding-bottom: 0px !important;
+  --padding-start: 0px !important;
+  --padding-end: 0px !important;
+  width: 100% !important;
+}
+
+.action-sheet-container.sc-ion-action-sheet-md {
+  justify-content: center;
+  width: 90%;
+}
+
+/** Tailwind CSS **/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dispaly-01 {
+    @apply font-medium text-[56px] leading-[64px];
+  }
+  .dispaly-02 {
+    @apply font-medium text-5xl leading-[56px];
+  }
+  .heading-01 {
+    @apply font-medium text-[40px] leading-[48px];
+  }
+  .heading-02 {
+    @apply font-medium text-4xl;
+  }
+  .heading-03 {
+    @apply font-medium text-[32px] leading-10;
+  }
+  .heading-04 {
+    @apply font-medium text-2xl leading-8;
+  }
+  .heading-05 {
+    @apply font-semibold text-xl leading-6;
+  }
+  .heading-06 {
+    @apply font-semibold text-base;
+  }
+
+  .button {
+    @apply font-semibold text-base leading-6;
+  }
+  .caption {
+    @apply uppercase text-sm leading-6;
+  }
+
+  .body-xs-400 {
+    @apply font-normal text-xs leading-snug;
+  }
+  .body-xs-500 {
+    @apply font-medium text-xs leading-snug;
+  }
+
+  .body-sm-400 {
+    @apply font-normal text-sm leading-normal;
+  }
+
+  .body-sm-500 {
+    @apply font-medium text-sm leading-normal;
+  }
+  .body-sm-600 {
+    @apply font-semibold text-sm leading-normal;
+  }
+
+  .body-medium-400 {
+    @apply font-normal text-base leading-6;
+  }
+
+  .body-medium-500 {
+    @apply font-medium text-base leading-6;
+  }
+
+  .body-large-400 {
+    @apply font-normal text-lg leading-normal;
+  }
+
+  .body-large-500 {
+    @apply font-medium text-lg leading-normal;
+  }
+
+  .body-xl-400 {
+    @apply font-normal text-xl leading-normal;
+  }
+
+  .body-xl-500 {
+    @apply font-medium text-xl leading-normal;
+  }
+}
