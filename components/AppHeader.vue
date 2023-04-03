@@ -8,7 +8,7 @@
         </ion-title>
       </ion-button>
       <ion-buttons slot="end">
-        <ion-button href="/auth/login">
+        <ion-button>
           Login
           <img src="/assets/svg/exit.svg" />
         </ion-button>
