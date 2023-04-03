@@ -62,7 +62,7 @@ export default {
               class="absolute left-auto top-1/2 -translate-y-1/2 right-3"
             />
           </label>
-          <ion-button href="/advance-filter" class="filter-button">
+          <ion-button class="filter-button">
             <ph-funnel-simple :size="32" />Advance filter
           </ion-button>
           <ion-button class="primary-button">

@@ -12,11 +12,11 @@
       <ph-plus-circle :size="24" color="#767F8C" />
       Post Job
     </ion-tab-button>
-    <ion-tab-button tab="pricing" href="/pricing" class="bg-white">
+    <ion-tab-button tab="pricing" class="bg-white">
       <ph-credit-card :size="24" color="#767F8C" />
       Pricing
     </ion-tab-button>
-    <ion-tab-button tab="menu" href="/menu" class="bg-white">
+    <ion-tab-button tab="menu" class="bg-white">
       <ph-list :size="24" color="#767F8C" />
       Menu
     </ion-tab-button>
